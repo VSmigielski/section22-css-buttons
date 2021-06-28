@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #button1 {
+            border-radius: 5px;
+            box-shadow: 2px 2px grey;
+        }
+        #button2 {
+            border-radius: 20px;
+            background-image: url("checkerboard.jpeg");
+            height: 200px;
+            width: 400px;
+        }
+        #button1:hover {
+            background-color: yellow;
+            transition-duration: 1s;
+        }
+        #button1:active {
+            background-image: url("checkerboard.jpeg");
+        }
+        #button2:active {
+            background-color: orangered;
+            transition: 0s;
+        }
+    </style>
+    <title>Hover and Active states</title>
+</head>
+<body>
+    <button id="button1"><img src="checkerboard.jpeg"></button>
+    <button id="button2">Button</button>
+</body>
+</html>

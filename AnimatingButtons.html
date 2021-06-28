@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #button1 {
+            width: 100px;
+            height: 30px;
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pulse {
+            0%{transform: 1;}
+            30%{transform: 1;}
+            40%{transform: 1;}
+            50%{transform: 1.10;}
+            60%{transform: 1;}
+            70%{transform: 1;}
+            80%{transform: 1;}
+        }
+
+        #button2 {
+            background: white;
+            box-shadow: 0 10px #999999;
+            width: 100px;
+            height: 50px;
+        }
+        #button2:hover {
+            background: grey;
+        }
+
+        #button2:active {
+            background: black;
+            box-shadow: 0 5px #666666;
+            transform: translateY(4px);
+        }
+    </style>
+    <title>Hover and Active states</title>
+</head>
+<body>
+    <button id="button1" type="button">Button</button>
+    <button id="button2" type="button">Button</button>
+</body>
+</html>
